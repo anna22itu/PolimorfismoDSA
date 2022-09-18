@@ -1,4 +1,3 @@
-
-//
-public class Comparable {
+public interface Comparable {
+    public int compareTo (Figura f);
 }
