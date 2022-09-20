@@ -1,9 +1,14 @@
 package edu.upc.eetac.dsa.oo;
 
-import java.util.Arrays;  //Importamos 'Arrays' del paquete util de java ya que trabajaremos con un vector 'Figuras' con diferentes tipos de figuras geométricas (círculo, rectangulo,etc)
+/**
+ * Importamos 'Arrays' del paquete util de java
+ * ya que trabajaremos con un vector 'Figuras'
+ * con diferentes tipos de figuras geométricas
+ */
+
+import java.util.Arrays;
 
 
-// El cálculo de áreas es un Polimorfismo
 public class GestorFiguras { // Definimos una clase 'edu.upc.eetac.dsa.oo.GestorFiguras'
 
     /**
@@ -21,17 +26,15 @@ public class GestorFiguras { // Definimos una clase 'edu.upc.eetac.dsa.oo.Gestor
     }
 
 
-    // Creamos un método para ordenar las áreas de nuestro vector (No devuelve nada)
+    /** Creamos un método para ordenar las áreas de nuestro vector (No devuelve nada)*/
     public static void sort(Figura[] vectorFigures) {
         Arrays.sort(vectorFigures);
     }
 
 
-    // Creamos el main donde se crea un vector de figuras y se colocan en él.
+    /** Creamos el main donde se crea un vector de figuras y se colocan en él.*/
     public static void main(String[] args) {
         Figura[] vectorFiguras = new Figura[6];
-        Figura f = new Rectangle(10, 12);
-
 
         vectorFiguras[0] = new Rectangle(5, 10); // le entramos los dos lados
         vectorFiguras[1] = new Cercle(3); // le entramos el radio
@@ -49,8 +52,5 @@ public class GestorFiguras { // Definimos una clase 'edu.upc.eetac.dsa.oo.Gestor
         for (int i = 0; i < 6; i++) {
             System.out.println(vectorFiguras[i].area());
         }
-
-
     }
-
 }

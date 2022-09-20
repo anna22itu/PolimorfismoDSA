@@ -1,14 +1,15 @@
 package edu.upc.eetac.dsa.oo;
 
-public class Triangle extends Figura{
+public class Triangle extends Figura {
     double h;
     double b;
 
-    public Triangle (double h, double b){
+    public Triangle(double h, double b) {
         this.h = h;
-        this.b=b;
+        this.b = b;
     }
-    public double area(){
-        return (h*b)/2;
+
+    public double area() {
+        return (h * b) / 2;
     }
 }
